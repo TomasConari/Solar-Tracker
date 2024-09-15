@@ -1,17 +1,94 @@
 <html lang="es">
     <head>
         <title>Inicio</title>
-        <link rel="stylesheet" href="./css/estiloIndex.css">
+        <link rel="stylesheet" href="./css/index.css">
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="autor" content="Tomás Contreras Arizabaleta y Jairo Alexis Castañeda">
+        <meta name="autor" content="Tomás Contreras Arizabaleta, Jairo Alexis Castañeda">
         <meta name="descripcion" content="Inicio">
-        <meta name="keywords" content="Glosario, Algoritmos">
-        <link rel="icon" href="../img/logoUCundinamarca.png" type="image/vnd.microsoft.icon">
+        <meta name="keywords" content="Glosario, Algoritmos, Proyectos, Ingenieria">
+        <link 
+            rel="icon" 
+            href="https://www.ucundinamarca.edu.co/images/iconos/favicon2019.png"
+            type="image/vnd.microsoft.icon"
+        >
     </head>
     <body>
-        <h2>Transición Energética</h2>
-        <a href="./html/menu.html">Menú</a>
-        <p>Parrafo Explicativo</p>
+        <header>
+            <nav id="cajaTitulo">
+                <a href="https://www.ucundinamarca.edu.co/" target="_blank">
+                    <img 
+                        src="https://www.ucundinamarca.edu.co/images/BotonRadioHome/logo-2024.png"
+                        alt="Logo Universidad de Cundinamarca"
+                        id="logoUniversidad"
+                    >
+                </a>
+                <h1 id="titulo">Transición Energética</h1>
+                <ul id="menu">
+                    <li><a id="actual" href="./index.html"> Inicio </a></li>
+                    <li><a href="./html/glosarioAlgoritmico.html"> Glosario Algorítmos </a></li>
+                <li><a href="./html/glosarioIngenieria.html"> Glosario Ingeniería </a></li>
+                </ul>
+            </nav>
+            <div id="cajaUsuario">
+                <h4 class="subtitulo" id="estudiante1">Tomás Contreras Arizabaleta</h4>
+                <h4 
+                    class="subtitulo" 
+                    id="asignatura">
+                        <a 
+                            href="https://www.ucundinamarca.edu.co/index.php/pregradoelementomenu2024/facultad-de-ingenieria/ingenieria-mecatronica" 
+                            target="_blank">
+                                Ingeniería Mecatrónica
+                        </a>
+                </h4>
+                <h4 class="subtitulo" id="estudiante2">Jairo Alexis Castañeda</h4>
+            </div>
+        </header>
+        <main>
+            <h1 id="introduccion">Introducción</h1>
+            <p>
+                La ingeniería es la disciplina que aplica los principios de las ciencias, las matemáticas y la tecnología para diseñar, construir, operar y mantener estructuras, sistemas, procesos o dispositivos con el fin de resolver problemas prácticos y mejorar la vida de las personas. Basados en esto desarrollamos una idea que aporta a la solución de una de las mayores problemáticas de la modernidad; La contaminación generada para generación de energía. ¿Cómo? A continuación, te explicamos de que trata nuestro proyecto.
+            </p>
+            <h1 id="nuestroProyecto">Nuestro Proyecto</h1>
+            <h3>Problemática</h3>
+            <p>En la actualidad, la dependencia de fuentes de energía no renovables ha generado un impacto negativo en el medio ambiente, impulsando la necesidad de soluciones energéticas más limpias y sostenibles. Aunque los paneles solares han demostrado ser una opción viable para la generación de energía renovable, su eficiencia puede verse comprometida por la variación en la posición del sol a lo largo del día. Los paneles solares fijos no aprovechan al máximo la radiación solar disponible, lo que reduce su capacidad para generar energía de manera óptima.</p>
+            <h3>Nuestra propuesta</h3>
+            <p>Desarrollar sistemas de paneles solares móviles que puedan ajustar su orientación para seguir el movimiento del sol y maximizar la captura de energía. Un sistema de este tipo permitiría un aprovechamiento más eficiente de la energía solar, contribuyendo de manera significativa a la transición hacia fuentes de energía más limpias y sostenibles.</p>
+            <h3>Ingenierías involucradas propuestas</h3>
+            <p>Se propusieron las siguientes ingenierías para dar profundización: Ingeniería Ambiental, Ingeniería Mecánica e Ingeniería Mecatrónica</p>
+            <h3>Ingeniería seleccionada para ser desarrollada</h3>
+            <p>Se seleccionó la Ingeniería Mecánica; La Ingeniería mecánica juega un papel crucial en el diseño del mecanismo que permite el movimiento de los paneles. Para seguir el movimiento del sol, es necesario desarrollar un sistema de seguimiento solar o tracker, que se encargue de ajustar la orientación de los paneles de manera precisa y eficiente. Este sistema involucra componentes mecánicos como motores, engranajes, ejes y estructuras de soporte, los cuales deben ser diseñados para soportar el peso de los paneles, resistir las condiciones climáticas y operar de manera confiable a lo largo del tiempo.</p>
+            <h1>Documentos del Proyecto</h1>
+            <div id="PDF">
+                <div class="pdf">
+                    <h5>Descargar PDF</h5>
+                    <a 
+                        href="./docs/Transicion_Energetica.pdf" 
+                        download="Transicion_Energetica.pdf">
+                            <img 
+                                src="https://www.iconpacks.net/icons/2/free-pdf-download-icon-2617-thumb.png"
+                                alt="Descargar PDF"
+                                class="iconoPDF"
+                            >
+                    </a>
+                </div>
+                <div class="pdf">
+                    <h5>Abrir PDF</h5>
+                    <a 
+                        href="./docs/Transicion_Energetica.pdf"
+                        target="_blank"
+                        >
+                            <img 
+                                src="https://cdn3.iconfinder.com/data/icons/muksis/128/pdf-512.png"
+                                alt="Abrir PDF"
+                                class="iconoPDF"
+                            >
+                    </a>
+                </div>
+            </div>
+        </main>
+        <footer id="cajaFooter">
+            <p>&copy;(c)Universidad de Cundinamarca | Todos los derechos reservados | 2024</hp>
+        </footer>
     </body>
 </html>

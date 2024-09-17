@@ -25,7 +25,7 @@ body {
     justify-content: space-between;
     align-items: center;
     border-bottom: 2px solid #7a6960;
-    height: 100px;
+    height: 70px;
 }
 #titulo {
     font-size: x-large;
@@ -105,7 +105,7 @@ header {
     box-sizing: border-box;
 }
 main{
-    margin-top: 200px;
+    margin-top: 150px;
     margin-left: 50px;
     margin-right: 50px;
     padding-bottom: 10px;

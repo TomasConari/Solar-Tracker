@@ -25,7 +25,7 @@ body{
     justify-content: space-between;
     align-items: center;
     border-bottom: 2px solid #7a6960;
-    height: 100px;
+    height: 70px;
 }
 #logoUniversidad{
     width: 180px;
@@ -102,7 +102,7 @@ header{
     background-color: #fff;
 }
 main {
-    margin-top: 200px;
+    margin-top: 150px;
     margin-left: 5%;
     margin-right: 5%;
     margin-bottom: 30px;

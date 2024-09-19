@@ -1,5 +1,4 @@
 html{
-    height: 100%;
     margin: 0;
     padding: 0;
     font-family: "Open Sans", sans-serif;
@@ -9,14 +8,17 @@ body{
     font-family: "Open Sans", sans-serif;
     color: #222120;
     opacity: 0;
-    height: 100vh;
     animation-name: fadeIn;
     animation-duration: 0.8s;
     animation-timing-function: ease-in-out;
     animation-fill-mode: forwards;
-    height: 100%;
     margin: 0;
     padding: 0;
+    background-color: #fef8f5;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    overflow-y: scroll;
 }
 #cajaTitulo {
     padding-left: 2%;
@@ -52,7 +54,7 @@ body{
     font-family: "Open Sans", sans-serif;
     color: #222120;
 }
-#menu li a, #asignatura a{
+#menu li a{
     text-decoration: none;
     text-align: center;
     transition: color 0.3s ease, text-decoration 0.3s ease;
@@ -60,7 +62,7 @@ body{
     color: #222120;
     font-size:small;
 }
-#menu li a:hover, #asignatura a:hover {
+#menu li a:hover{
     color: #007BFF;
     text-decoration: underline;
 }
@@ -81,36 +83,29 @@ body{
     margin-bottom: 2%;
     margin-right: 2.5%;
 }
-#cajaUsuario {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 2px solid #7a6960;
-    margin-right: 40px;
-    margin-left: 40px;
-    padding-left: 1%;
-    padding-right: 1%;
-    background-color: #fff;
-}
 header{
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    height: 100px;
     z-index: 1000;
     background-color: #fff;
 }
 main {
-    margin-top: 150px;
+    min-height: fit-content;
+    max-height: fit-content;
+    margin-top: 80px;
     margin-left: 5%;
     margin-right: 5%;
-    margin-bottom: 30px;
     display: flex;
     flex-direction: column;
-    gap: 10px;
-    padding: 1%;
-    border: 2px solid #7a6960 ;
+    margin-bottom: 1%;
+    border: 2px solid #7a6960;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.3);
+    flex: 1;
+}
+main div{
+    padding: 0.5%;
 }
 details summary {
     cursor: pointer;
@@ -133,10 +128,7 @@ details article p{
     padding-top: 0%;
     text-align: justify;
 }
-#cajaFooter{
-    position: fixed;
-    bottom: 0;
-    z-index: 5;
+footer{
     height: 30px;
     width: 100%;
     display: flex;
@@ -145,10 +137,6 @@ details article p{
     border-top: 2px solid #7a6960;
     background-color: #f8f8f8;
     box-sizing: border-box;
-}
-.subtitulo{
-    width: 33%;
-    text-align: center;
 }
 @keyframes fadeIn{
     from{

@@ -71,8 +71,19 @@ body {
     color: #007BFF;
     text-decoration: underline;
 }
+main{
+    margin-left: 10dvh;
+    margin-right: 10dvh;
+}
+main p{
+    text-align: justify;
+    font-size: x-large;
+}
+#nombres{
+    text-align: center;
+    font-size: larger;
+}
 header {
-    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -90,16 +101,13 @@ footer{
     background-color: #f8f8f8;
     box-sizing: border-box;
 }
-main{
-    margin-top: 85px;
-    margin-left: 50px;
-    margin-right: 50px;
+#primeraSeccion{
+    margin-top: 30px;
     background-color: #fef8f5;
     flex: 1;
+    border-bottom: 1px solid #777;
 }
-main p{
-    margin-left: 50px;
-    margin-right: 50px;
+#primeraSeccion p{
     margin-top: 0px;
     margin-bottom: 5%;
     padding-bottom: 10px;
@@ -108,29 +116,66 @@ main p{
     color: #5c5c5c;
     border-bottom: 1px solid #777;
 }
-main h1{
+.subtitulo{
     text-align: center;
-    margin-bottom: 30px;
+}
+.titulo {
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 50px;
 }
 .centerText{
     text-align: center;
 }
-#PDF{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin-bottom: 50px;
+.secccion{
+    border-bottom: 1px solid #777;
 }
-.pdf{
-    margin-left: 5%;
-    margin-right: 5%;
-}
-.pdf h5{
-    text-align: center;
-}
-.iconoPDF{
-    width: 100px;
+#diagramaEspinaPescado{
     height: auto;
+    width: 90%;
+    margin-left: 5%;
+}
+.encuesta{
+    height: auto;
+    width: 90%;
+    border-radius: 25px;
+    border: 4px solid #000000;
+    margin-left: 5%;
+}
+.componentes{
+    height: auto;
+    width: 60%;
+    border-radius: 25px;
+    border: 4px solid #000000;
+    margin-left: 20%;
+}
+#contenido a{
+    color: #222120;
+    text-decoration: none;
+}
+#contenido a:hover{
+    color: #007BFF;
+    text-decoration: underline;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+a:visited {
+    color: #222120; /* Mantiene el color del enlace no visitado */
+}
+.indice{
+    padding: 5px;
+    display: inline;
+    border-radius: 3px;
+    border: 2px solid #222120;
+}
+.indice:hover{
+    border: 2px solid #007BFF;
+}
+.boton{
+    text-decoration: none;
+}
+.boton:hover{
+    color: #007BFF;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
 }
 @keyframes fadeIn {
     from {

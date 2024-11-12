@@ -23,59 +23,400 @@
                         id="logoUniversidad"
                     >
                 </a>
-                <h1 id="titulo">Transición Energética</h1>
+                <h1 id="titulo">Solar Tracker</h1>
                 <ul id="menu">
-                    <li><a id="actual" href="./index.html"> Inicio </a></li>
+                    <li><a id="actual" href="./index.html"> Proyecto </a></li>
                     <li><a href="./html/glosarioAlgoritmico.html"> Glosario Algorítmos </a></li>
                     <li><a href="./html/glosarioIngenieria.html"> Glosario Ingeniería </a></li>
                 </ul>
             </nav>
         </header>
         <main>
-            <h3 class="centerText">Desarrollan</h3>
-            <p class="centerText">Tomás Contreras Arizabaleta y Jairo Alexis Castañeda</p>
-            <h1 id="introduccion">Introducción</h1>
-            <p>
-                La ingeniería es la disciplina que aplica los principios de las ciencias, las matemáticas y la tecnología para diseñar, construir, operar y mantener estructuras, sistemas, procesos o dispositivos con el fin de resolver problemas prácticos y mejorar la vida de las personas. Basados en esto desarrollamos una idea que aporta a la solución de una de las mayores problemáticas de la modernidad; La contaminación generada para generación de energía. ¿Cómo? A continuación, te explicamos de que trata nuestro proyecto.
-            </p>
-            <h1 id="nuestroProyecto">Nuestro Proyecto</h1>
-            <h3>Problemática</h3>
-            <p>En la actualidad, la dependencia de fuentes de energía no renovables ha generado un impacto negativo en el medio ambiente, impulsando la necesidad de soluciones energéticas más limpias y sostenibles. Aunque los paneles solares han demostrado ser una opción viable para la generación de energía renovable, su eficiencia puede verse comprometida por la variación en la posición del sol a lo largo del día. Los paneles solares fijos no aprovechan al máximo la radiación solar disponible, lo que reduce su capacidad para generar energía de manera óptima.</p>
-            <h3>Nuestra propuesta</h3>
-            <p>Desarrollar sistemas de paneles solares móviles que puedan ajustar su orientación para seguir el movimiento del sol y maximizar la captura de energía. Un sistema de este tipo permitiría un aprovechamiento más eficiente de la energía solar, contribuyendo de manera significativa a la transición hacia fuentes de energía más limpias y sostenibles.</p>
-            <h3>Ingenierías involucradas propuestas</h3>
-            <p>Se propusieron las siguientes ingenierías para dar profundización: Ingeniería Ambiental, Ingeniería Mecánica e Ingeniería Mecatrónica</p>
-            <h3>Ingeniería seleccionada para ser desarrollada</h3>
-            <p>Se seleccionó la Ingeniería Mecánica; La Ingeniería mecánica juega un papel crucial en el diseño del mecanismo que permite el movimiento de los paneles. Para seguir el movimiento del sol, es necesario desarrollar un sistema de seguimiento solar o tracker, que se encargue de ajustar la orientación de los paneles de manera precisa y eficiente. Este sistema involucra componentes mecánicos como motores, engranajes, ejes y estructuras de soporte, los cuales deben ser diseñados para soportar el peso de los paneles, resistir las condiciones climáticas y operar de manera confiable a lo largo del tiempo.</p>
-            <h1>Documentos del Proyecto</h1>
-            <div id="PDF">
-                <div class="pdf">
-                    <h5>Descargar PDF</h5>
-                    <a 
-                        href="./docs/Transicion_Energetica.pdf" 
-                        download="Transicion_Energetica.pdf">
-                            <img 
-                                src="https://www.iconpacks.net/icons/2/free-pdf-download-icon-2617-thumb.png"
-                                alt="Descargar PDF"
-                                class="iconoPDF"
-                            >
-                    </a>
-                </div>
-                <div class="pdf">
-                    <h5>Abrir PDF</h5>
-                    <a 
-                        href="./docs/Transicion_Energetica.pdf"
-                        target="_blank"
-                        >
-                            <img 
-                                src="https://cdn3.iconfinder.com/data/icons/muksis/128/pdf-512.png"
-                                alt="Abrir PDF"
-                                class="iconoPDF"
-                            >
-                    </a>
-                </div>
+            <div id="primeraSeccion">
+                <h4 id="nombres" class="centerText">Tomás Contreras Arizabaleta y Jairo Alexis Castañeda</h4>
+            </div>
+            <div id="contenido" class="secccion">
+                <h1 class="titulo">Contenido</h1>
+                <h2><a href="#justificacion">1. Justificación</a></h2>
+                <h3><a href="#1.1">&nbsp;&nbsp;&nbsp;1.1 Situación Problémica</a></h3>
+                <h3><a href="#1.2">&nbsp;&nbsp;&nbsp;1.2 Instrumentos para Levantamiento de Información</a></h3>
+                <h2><a href="#marcoTeorico">2. Marco Teórico Conceptual</a></h2>
+                <h3><a href="#2.1">&nbsp;&nbsp;&nbsp;2.1 Normativa Actual</a></h3>
+                <h2><a href="#propuesta">3. Propuesta</a></h2>
+                <h3><a href="#3.1">&nbsp;&nbsp;&nbsp;3.1 Introducción a Solar Tracker</a></h3>
+                <h3><a href="#3.2">&nbsp;&nbsp;&nbsp;3.2 Detalles Técnicos</a></h3>
+                <h4><a href="#3.2.1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3.2.1 Componentes</a></h4>
+                <h4><a href="#3.2.2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3.2.2 Funcionamiento General</a></h4>
+                <h3><a href="#3.3">&nbsp;&nbsp;&nbsp;3.3 Comparación con Ejemplos Actuales</a></h3>
+                <h4><a href="#3.3.1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3.3.1 Costos</a></h4>
+                <h4><a href="#3.3.2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3.3.2 Eficiencia</a></h4>
+                <h2><a href="#conclusion">4. Conclusión</a></h2>
+            </div>
+            <div id="justificacion" class="secccion">
+                <h1 class="titulo">1. Justificación</h1>
+                <h2 id="1.1">1.1 Situación Problémica</h2>
+                <p>
+                    En la actualidad, la dependencia de fuentes de energía no renovables ha generado un 
+                    impacto negativo en el medio ambiente, impulsando la necesidad de soluciones energéticas más 
+                    limpias y sostenibles. Aunque los paneles solares han demostrado ser una opción viable para la 
+                    generación de energía renovable, su eficiencia puede verse comprometida por la variación en la 
+                    posición del sol a lo largo del día. Los paneles solares fijos no aprovechan al máximo la radiación 
+                    solar disponible, lo que reduce su capacidad para generar energía de manera óptima.
+                </p>
+                <a href="#primeraSeccion" class="boton"><h3 class="centerText indice">Volver a la tabla de Contenido</h3></a>
+                <h2 id="1.2">1.2 Instrumentos para Levantamiento de Información</h2>
+                <p>
+                    Para el levantamiento de información se usó un diagrama de espina de pescado con el fin 
+                    de conocer las razones de esta problemática, seguido de una encuesta a la comunidad para 
+                    recabar la opinión de la comunidad sobre su conocimiento acerca de la energía solar, el nivel de 
+                    apoyo hacia proyectos de este tipo y su comprensión de la problemática planteada. A 
+                    continuación, el diagrama de espina de pescado junto con su desarrollo. 
+                    <br /><br />
+                    <img 
+                        src="./img/Diagrama de Pescado.png"
+                        alt="Diagrama Espina de Pescado"
+                        id="diagramaEspinaPescado"
+                    />
+                    <br />
+                    <em>Nota</em>. Diagrama de Espina de pescado con sus principales problemáticas. Figura elaborada por el autor.
+                    <br /><br />
+                    1. Factores Tecnológicos
+                    <br /><br />
+                    - Captación pobre: Paneles con baja capacidad de generación y captación de energía en 
+                    condiciones de poca luz.
+                    <br /><br />
+                    - Eficiencia limitada: Materiales de los paneles que no permiten una conversión óptima de 
+                    luz solar en electricidad.
+                    <br /><br /><br />
+                    2. Recursos Financieros
+                    <br /><br />
+                    - Presupuesto limitado: Falta de fondos suficientes en las comunidades remotas para 
+                    mejorar los sistemas actuales.
+                    <br /><br />
+                    - Mantenimiento costoso: Gastos elevados en la reparación y mantenimiento de equipos 
+                    solares en áreas de difícil acceso.
+                    <br /><br /><br />
+                    3. Condiciones ambientales
+                    <br /><br />
+                    - Variaciones climáticas: Frecuentes condiciones de nubosidad o clima adverso que 
+                    reducen la captación de energía solar.
+                    <br /><br />
+                    - Variaciones estacionales: Cambios en la duración e intensidad de la luz solar según la 
+                    estación, afectando la producción energética.
+                    <br /><br /><br />
+                    4. Infraestructura
+                    <br /><br />
+                    - Ubicación inadecuada: Paneles colocados en zonas con sombras u obstrucciones que 
+                    limitan la exposición solar.
+                    <br /><br />
+                    - Instalación compleja: Problemas para trasladar e instalar equipos en comunidades remotas, 
+                    afectando la calidad del sistema.
+                    <br /><br /><br />
+                    5. Recursos Humanos
+                    <br /><br />
+                    - Falta de capacitación: Personal no capacitado en la instalación y mantenimiento de 
+                    sistemas solares eficientes.
+                    <br /><br />
+                    - Escasez de expertos locales: Dificultad para encontrar profesionales especializados en 
+                    tecnología solar en áreas remotas.
+                    <br /><br /><br />
+                    6. Factores Sociales y de Conciencia
+                    <br /><br />
+                    - Preferencia por generadores: Algunos sectores de la comunidad prefieren fuentes 
+                    convencionales debido a costumbres o hábitos.
+                    <br /><br />
+                    - Falta de apoyo institucional: Limitado respaldo o incentivo de organismos 
+                    gubernamentales para mejorar la infraestructura solar en comunidades aisladas.
+                    <br /><br /><br />
+                    La encuesta se estructuró en tres tipos de preguntas: conocimiento sobre energía solar, 
+                    apoyo a la transición hacia energías renovables y comprensión de la problemática junto con sus 
+                    posibles soluciones. Esta encuesta se realizó durante un período de cinco días y se difundió a través 
+                    de redes sociales. Constaba de 9 preguntas y se obtuvieron un total de 80 respuestas, la mayoría 
+                    provenientes de personas en el rango de edad de 35 a 50 años.
+                    <br /><br />
+                    Conocimiento de energía solar:
+                    <br /><br />
+                    <img 
+                        src="./img/conocimiento.png"
+                        alt="Resultados Encuesta Seccion Conocimiento"
+                        id="encuestaConocimiento"
+                        class="encuesta"
+                    />
+                    <br /><br /><br />
+                    Apoyo a la transición hacia energías renovables:
+                    <br /><br />
+                    <img 
+                        src="./img/apoyo.png"
+                        alt="Resultados Encuesta Seccion Apoyo"
+                        id="encuestaApoyo"
+                        class="encuesta"
+                    />
+                    <br /><br /><br />
+                    Comprensión de la problemática y sus posibles soluciones:
+                    <br /><br />
+                    <img 
+                        src="./img/problematica.png"
+                        alt="Resultados Encuesta Seccion Problematica"
+                        id="encuestaProblematica"
+                        class="encuesta"
+                    />
+                    <br /><br /><br />
+                    A partir del diagrama de espina de pescado y los resultados de la encuesta, se evidencia no 
+                    solo una problemática creciente, sino también el nivel de conocimiento que tiene la comunidad 
+                    sobre este problema y su disposición a apoyar en la búsqueda de una solución.
+                    <br /><br />
+                    <a href="#primeraSeccion" class="boton"><h3 class="centerText indice">Volver a la tabla de Contenido</h3></a>
+                </p>
+            </div>
+            <br /><br />
+            <div id="marcoTeorico" class="secccion">
+                <h1 class="titulo">2. Marco Teórico Conceptual</h1>
+                <h2 id="2.1">2.1 Normativa Actual</h2>
+                <p>
+                    Las normativas son numerosas y extensas; a continuación, se mencionarán las más 
+                    importantes:
+                    <br /><br />
+                    Eficiencia Energética:
+                    <br />
+                    • Norma Internacional: ISO 50001.
+                    <br />
+                    • Normativa Nacional: Resolución 1980 de 2017 del Ministerio de Minas y Energía.
+                    <br /><br />
+                    Uso de Energías Renovables:
+                    <br />
+                    • Norma Internacional: Acuerdo de París (2015).
+                    <br />
+                    • Normativa Nacional: Ley 1715 de 2014.
+                    <br /><br />
+                    Tecnologías Limpias:
+                    <br />
+                    • Norma Internacional: Recomendaciones de la Agencia Internacional de Energía (AIE).
+                    <br />
+                    • Normativa Nacional: Ley 697 de 2001.
+                    <br /><br />
+                    Integración a la Red Eléctrica:
+                    <br />
+                    • Norma Internacional: Estándares del Instituto de Ingeniería Eléctrica y Electrónica 
+                    (IEEE).
+                    <br />
+                    • Normativa Nacional: Resolución CREG 030 de 2018.
+                    <br /><br />
+                    Gestión de Residuos:
+                    <br />
+                    • Norma Internacional: Directiva Europea 2008/98/EC.
+                    <br />
+                    • Normativa Nacional: Ley 1672 de 2013.
+                    <br /><br />
+                    Normas ISO Relevantes:
+                    <br />
+                    • ISO 9001:2015 - Sistema de gestión de la calidad.
+                    <br />
+                    • ISO 14001:2015 - Gestión ambiental.
+                    <br />
+                    • ISO 45001:2018 - Gestión de la salud y seguridad en el trabajo.
+                    <br />
+                    • ISO 50001:2018 - Gestión de la energía.
+                    <br />
+                    • ISO/IEC 61010-1:2010 - Requisitos de seguridad para equipos eléctricos de medida y 
+                    control.
+                    <br /><br />
+                    Cumplimiento Medioambiental:
+                    <br />
+                    • Norma Internacional: Convención Marco de las Naciones Unidas sobre el Cambio 
+                    Climático (CMNUCC) y Protocolo de Kioto.
+                    <br />
+                    • Normativa Nacional: Decreto 1076 de 2015.
+                    <br /><br />
+                    Evaluación de Impacto Ambiental (EIA):
+                    <br />
+                    • Norma Internacional: Estándares del Banco Mundial y la Corporación Financiera 
+                    Internacional (IFC).
+                    <br />
+                    • Normativa Nacional: Ley 99 de 1993.
+                    <br /><br />
+                    Legislación sobre Energía Renovable:
+                    <br />
+                    • Norma Internacional: Agenda 2030 y ODS 7.
+                    <br />
+                    • Normativa Nacional: Ley 1715 de 2014.
+                    <br /><br />
+                    Derechos de Propiedad y Uso del Suelo:
+                    <br />
+                    • Norma Internacional: Directrices del Banco Mundial.
+                    <br />
+                    • Normativa Nacional: Ley 388 de 1997 y Decreto 1077 de 2015.
+                    <br /><br />
+                    Participación Comunitaria y Consulta Previa:
+                    <br />
+                    • Norma Internacional: Convenio 169 de la OIT.
+                    <br />
+                    • Normativa Nacional: Ley 21 de 1991.
+                    <br /><br />
+                    Incentivos Fiscales:
+                    <br />
+                    • Norma Internacional: Compromisos del Acuerdo de París.
+                    <br />
+                    • Normativa Nacional: Ley 1715 de 2014.
+                    <br /><br />
+                    Regulación del Mercado Energético:
+                    <br />
+                    • Norma Internacional: Directrices de la Agencia Internacional de Energía (AIE).
+                    <br />
+                    • Normativa Nacional: Resolución CREG 030 de 2018.
+                    <br /><br />
+                    Para información mas detallada sobre el marco normativo, consulte el siguiente documento: <a href="https://drive.google.com/file/d/1-7ZYj9x-MNZhHkHYDY5hkemZGJGYdC8D/view" target="_blank">Aquí</a>
+                </p>
+                <a href="#primeraSeccion" class="boton"><h3 class="centerText indice">Volver a la tabla de Contenido</h3></a>
+            </div>
+            <br /><br />
+            <div id="propuesta" class="secccion">
+                <h1 class="titulo">3. Propuesta</h1>
+                <h2 id="3.1">3.1 Introducción a Solar Tracker</h2>
+                <p>
+                    Solar Tracker es un sistema innovador diseñado para mejorar la eficiencia de los paneles 
+                    solares mediante el seguimiento automático de la posición del sol a lo largo del día. A diferencia 
+                    de los sistemas solares fijos, los Solar Trackers ajustan el ángulo de los paneles en respuesta al 
+                    movimiento solar, maximizando la captura de energía y optimizando la generación eléctrica. Este 
+                    tipo de tecnología es especialmente beneficiosa en zonas remotas o con acceso limitado a la red 
+                    eléctrica, ya que permite aprovechar al máximo la radiación solar disponible y aumentar la 
+                    autonomía energética. Además de contribuir a la reducción de la dependencia de fuentes de energía 
+                    convencionales, los Solar Trackers representan una solución sostenible que apoya la transición 
+                    hacia energías renovables y disminuye la huella de carbono.
+                </p>
+                <a href="#primeraSeccion" class="boton"><h3 class="centerText indice">Volver a la tabla de Contenido</h3></a>
+                <h2 id="3.2">3.2 Detalles Técnicos</h2>
+                <h3 id="3.2.1">3.2.1 Componentes</h3>
+                <p>
+                    Cada Solar Tracker cuenta con los siguientes componentes:
+                    <br /><br />
+                    <img 
+                        src="./img/boceto.png"
+                        alt="Componentes Del Solar Tracker"
+                        class="componentes"
+                    />
+                    <br />
+                    <em>Nota</em>. Componentes de un Solar Tracker. Figura elaborada por el autor.
+                    <br /><br />
+                    Listado de componentes:
+                    <br /><br />
+                    • Panel Solar Fotovoltaico.
+                    <br />
+                    • Soporte del panel.
+                    <br />
+                    • 2 Ejes.
+                    <br />
+                    • 1 Motor.
+                    <br />
+                    • 1 Sensor de luz solar.
+                    <br />
+                    • 1 Controlador.
+                    <br />
+                    • 1 Batería.
+                </p>
+                <h3 id="3.2.2">3.2.2 Funcionamiento General</h3>
+                <p>
+                    Solar Tracker es un sistema compuesto por paneles solares móviles dispuestos 
+                    consecutivamente, diseñados para seguir la trayectoria del sol a lo largo del día y maximizar la 
+                    captación de radiación solar. Cada panel se ajusta en dos ejes, permitiendo una orientación precisa 
+                    que asegura una mayor exposición al sol. Equipados con sensores de luz, los paneles detectan la 
+                    posición exacta del sol en tiempo real y envían esta información a un controlador central. Este 
+                    controlador procesa los datos de los sensores y, mediante motores, ajusta la posición de los paneles 
+                    para garantizar que siempre estén alineados de forma óptima. El sistema de movimiento en dos 
+                    ejes aumenta significativamente la eficiencia energética de los paneles, alcanzando entre el 25% y 
+                    el 28% de conversión de energía, frente al 15%-20% de los paneles fijos. En términos de 
+                    producción diaria, los paneles móviles generan entre 0.325 kWh y 0.37 kWh, logrando un 
+                    incremento de hasta un 23.33% en comparación con sistemas fijos
+                    <br /><br />
+                    <img 
+                        src="./img/cajaNegra.png"
+                        alt="Funcionamiento Del Solar Tracker"
+                        class="componentes"
+                    />
+                    <br />
+                    <em>Nota</em>. Interacción entre los componentes. Figura elaborada por el autor.
+                </p>
+                <a href="#primeraSeccion" class="boton"><h3 class="centerText indice">Volver a la tabla de Contenido</h3></a>
+                <h2 id="3.3">3.3 Comparación con Ejemplos Actuales</h2>
+                <h3 id="3.3.1">3.3.1 Costos</h3>
+                <p>
+                    <b>Panel Solar Común</b>
+                    <br /><br />
+                    El costo de un panel solar tradicional, compuesto únicamente por el panel solar y los 
+                    sistemas de montaje, es significativamente más bajo en comparación con un Solar Tracker. Los 
+                    precios de los paneles solares convencionales varían entre $1.000.000 COP y $1.500.000 COP, 
+                    dependiendo de la calidad y la marca.
+                    <br /><br /><br />
+                    <b>Solar Tracker</b>
+                    <br /><br />
+                    El costo de un panel Solar Tracker, que incluye componentes adicionales como sensores, 
+                    controladores, motores y sistemas de montaje, es 
+                    considerablemente más alto. El costo por unidad de un Solar Tracker oscila entre $1.750.000 COP 
+                    y $4.900.000 COP. Sin embargo, esta diferencia de precio se justifica por el aumento en la 
+                    eficiencia energética, ya que los paneles móviles pueden generar entre un 23% y 28% más de energía en 
+                    comparación con los paneles fijos.
+                    <br /><br /><br />
+                    <b>Producción en Masa</b>
+                    <br /><br />
+                    La fabricación en masa de Solar Trackers permite reducir el costo por unidad, gracias a las 
+                    economías de escala. Si se produce un número elevado de paneles solares móviles, se estima que 
+                    el costo podría reducirse entre un 15% y 25%. Esto llevaría el costo por unidad a un rango de entre 
+                    $1.312.500 COP y $4.165.000 COP, dependiendo de la escala de producción. Esta reducción hace 
+                    que el sistema Solar Tracker sea más accesible a largo plazo, tanto para áreas aisladas como 
+                    conectadas a la red eléctrica.
+                    <br /><br /><br />
+                    <b>Apoyos Gubernamentales</b>
+                    <br /><br />
+                    En Colombia, los proyectos de energía renovable, incluidos los sistemas de Solar Tracker, 
+                    pueden beneficiarse de incentivos fiscales bajo la Ley 1715 de 2014. Esto incluye exenciones de 
+                    impuestos para la importación de equipos y materiales utilizados en la instalación de tecnologías 
+                    solares. Además, programas como "Energía Solar para Todos" ofrecen subsidios que ayudan a 
+                    reducir significativamente los costos iniciales de implementación.
+                    <br /><br /><br />
+                    <b>Sostenibilidad y Recuperación de la Inversión</b>
+                    <br /><br />
+                    A pesar del mayor costo inicial, los Solar Trackers tienen una vida útil de aproximadamente 
+                    25 años, lo que permite una generación continua y eficiente de energía. Se estima que los ingresos 
+                    generados durante la vida útil de un panel solar móvil podrían ser tres veces mayores que el costo 
+                    de producción. El tiempo de recuperación de la inversión se calcula entre 5 a 7 años, lo que asegura 
+                    la viabilidad económica del proyecto a largo plazo. Además, los sistemas conectados a la red 
+                    pueden generar ingresos adicionales, contribuyendo aún más a la recuperación de la inversión.
+                    <br /><br /><br />
+                    En resumen, aunque los costos iniciales de los Solar Trackers son más altos en comparación 
+                    con los paneles solares convencionales, la mayor eficiencia energética, la producción en masa, los 
+                    incentivos gubernamentales y los beneficios sostenibles hacen que los Solar Trackers sean una 
+                    opción económicamente viable y atractiva a largo plazo.
+                </p>
+                <h3 id="3.3.2">3.3.2 Eficiencia</h3>
+                <p>
+                    Los Solar Trackers, con una eficiencia que varía entre el 25% y el 28%, producen entre 
+                    0.375 kWh (375 Wh) y 0.42 kWh (420 Wh) por día. Esto se traduce en un aumento de la 
+                    producción de energía en comparación con los paneles solares fijos. La producción neta de los 
+                    paneles móviles representa un 
+                    incremento significativo de entre un 8% y un 23% en relación con los paneles fijos.
+                    <br /><br />
+                    <img 
+                        src="./img/grafico.png"
+                        alt="Comparación de Eficiencia"
+                        class="componentes"
+                    />
+                    <br />
+                    <em>Nota</em>. Gráfico comparativa entre la energía generada por un panel solar común y un Solar Tracker entre las 6:00 y las 18:00. Figura elaborada por el autor.
+                    <br /><br />
+                </p>
+                <a href="#primeraSeccion" class="boton"><h3 class="centerText indice">Volver a la tabla de Contenido</h3></a>
+            </div>
+            <br /><br />
+            <div id="conclusion" class="secccion">
+                <h1 class="titulo">4. Conclusión</h1>
+                <p>
+                    El sistema Solar Tracker ofrece una solución práctica y eficiente para optimizar el aprovechamiento de la energía solar mediante un sistema de seguimiento del sol. Este sistema permite maximizar la captación de radiación solar, incrementando la eficiencia energética en comparación con sistemas fijos. Su diseño, que combina sensores y un sistema de control en dos ejes, facilita una adaptación continua a la posición del sol, lo cual es especialmente útil en regiones con alta irradiancia solar.
+                    <br /><br />
+                    Además, el Solar Tracker responde a la necesidad de generar energía de manera sostenible en zonas remotas, proporcionando una fuente confiable y limpia de electricidad que reduce la dependencia de fuentes no renovables. Este sistema se destaca por su capacidad de mejorar la autonomía energética en áreas desatendidas, alineándose con iniciativas de sostenibilidad y con los objetivos de transición hacia energías limpias. En conclusión, el Solar Tracker representa un avance en la tecnología de aprovechamiento solar, demostrando el valor de su sistema de seguimiento para maximizar la eficiencia energética y contribuir a un modelo de energía más ecológico.
+                </p>
+                <a href="#primeraSeccion" class="boton"><h3 class="centerText indice">Volver a la tabla de Contenido</h3></a>
             </div>
         </main>
+        <br />
         <footer id="cajaFooter">
             <p>&copy;(c)Universidad de Cundinamarca | Todos los derechos reservados | 2024</hp>
         </footer>

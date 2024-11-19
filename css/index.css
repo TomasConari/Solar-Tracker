@@ -49,28 +49,6 @@ body {
     padding: 0;
     width: 180px;
 }
-#menu li {
-    list-style-type: none;
-    display: flex;
-    margin-left: 2%;
-    margin-right: 2%;
-    align-items: center;
-    justify-content: center;
-    font-family: "Open Sans", sans-serif;
-    color: #222120;
-}
-#menu li a, #asignatura a{
-    text-decoration: none;
-    text-align: center;
-    transition: color 0.3s ease, text-decoration 0.3s ease;
-    font-family: "Open Sans", sans-serif;
-    color: #222120;
-    font-size:small;
-}
-#menu li a:hover, #actual {
-    color: #007BFF;
-    text-decoration: underline;
-}
 main{
     margin-left: 10dvh;
     margin-right: 10dvh;
@@ -159,7 +137,7 @@ footer{
     transition: color 0.3s ease, text-decoration 0.3s ease;
 }
 a:visited {
-    color: #222120; /* Mantiene el color del enlace no visitado */
+    color: #222120;
 }
 .indice{
     padding: 5px;
@@ -176,6 +154,31 @@ a:visited {
 .boton:hover{
     color: #007BFF;
     transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+#menu li {
+    list-style-type: none;
+    display: flex;
+    margin-left: 2%;
+    margin-right: 2%;
+    align-items: center;
+    justify-content: center;
+    font-family: "Open Sans", sans-serif;
+    color: #222120;
+}
+#menu li a{
+    text-decoration: none;
+    text-align: center;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+    font-family: "Open Sans", sans-serif;
+    color: #222120;
+}
+#menu li a:hover {
+    color: #007BFF !important;
+    text-decoration: underline !important;
+}
+
+#menu li a:active {
+    transform: scale(0.95) !important;
 }
 @keyframes fadeIn {
     from {

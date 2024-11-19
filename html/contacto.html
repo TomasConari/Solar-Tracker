@@ -1,0 +1,48 @@
+<html lang="es">
+    <head>
+        <title>Contacto</title>
+        <link rel="stylesheet" href="../css/contacto.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="autor" content="Tomás Contreras Arizabaleta">
+        <meta name="descripcion" content="Glosario Ingenieria">
+        <meta name="keywords" content="Glosario, Algoritmos, Proyectos, Ingenieria">
+        <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+        <script type="module" src="../javascript/contacto.js"></script>
+        <link 
+            rel="icon" 
+            href="../img/icon.png"
+            type="image/png"
+        >
+    </head>
+    <body>
+        <header>
+            <nav id="cajaTitulo">
+                <a href="https://www.ucundinamarca.edu.co/" target="_blank">
+                    <img 
+                        src="https://www.ucundinamarca.edu.co/images/BotonRadioHome/logo-2024.png"
+                        alt="Logo Universidad de Cundinamarca"
+                        id="logoUniversidad"
+                    >
+                </a>
+                <h1 id="titulo">Contacto</h1>
+                <ul id="menu">
+                    <li><a href="../index.html"> Proyecto </a></li>
+                    <li><a href="./glosario.html"> Glosario </a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div id="caja">
+                <input type="text" id="nombre" placeholder="Nombres" required autocomplete="off">
+                <input type="text" id="apellido" placeholder="Apellidos" required autocomplete="off">
+                <input type="text" id="email" placeholder="Correo" required autocomplete="off">
+                <input type="text" id="pais" placeholder="País" required autocomplete="off">
+                <button id="enviar">Enviar</button>
+            </div>
+        </main>
+        <footer id="cajaFooter">
+            <p>&copy;(c)Universidad de Cundinamarca | Todos los derechos reservados | 2024</hp>
+        </footer>
+    </body>
+</html>

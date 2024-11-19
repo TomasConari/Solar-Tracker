@@ -5,6 +5,7 @@ html {
     font-family: "Open Sans", sans-serif;
     color: #222120;
 }
+
 body {
     font-family: "Open Sans", sans-serif;
     color: #222120;
@@ -21,18 +22,22 @@ body {
     flex-direction: column;
     overflow-y: scroll;
 }
-main{
+
+main {
     margin-left: 10dvh;
     margin-right: 10dvh;
 }
-main p{
+
+main p {
     text-align: justify;
     font-size: x-large;
 }
-#nombres{
+
+#nombres {
     text-align: center;
     font-size: larger;
 }
+
 header {
     top: 0;
     left: 0;
@@ -41,7 +46,8 @@ header {
     background-color: #fff;
     box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.3);
 }
-footer{
+
+footer {
     height: 30px;
     width: 100%;
     display: flex;
@@ -51,13 +57,15 @@ footer{
     background-color: #f8f8f8;
     box-sizing: border-box;
 }
-#primeraSeccion{
+
+#primeraSeccion {
     margin-top: 30px;
     background-color: #fef8f5;
     flex: 1;
     border-bottom: 1px solid #777;
 }
-#primeraSeccion p{
+
+#primeraSeccion p {
     margin-top: 0px;
     margin-bottom: 5%;
     padding-bottom: 10px;
@@ -66,92 +74,82 @@ footer{
     color: #5c5c5c;
     border-bottom: 1px solid #777;
 }
-.subtitulo{
+
+.subtitulo {
     text-align: center;
 }
+
 .titulo {
     text-align: center;
     margin-bottom: 50px;
     margin-top: 50px;
 }
-.centerText{
+
+.centerText {
     text-align: center;
 }
-.secccion{
+
+.secccion {
     border-bottom: 1px solid #777;
 }
-#diagramaEspinaPescado{
+
+#diagramaEspinaPescado {
     height: auto;
     width: 90%;
     margin-left: 5%;
 }
-.encuesta{
+
+.encuesta {
     height: auto;
     width: 90%;
     border-radius: 25px;
     border: 4px solid #000000;
     margin-left: 5%;
 }
-.componentes{
+
+.componentes {
     height: auto;
     width: 60%;
     border-radius: 25px;
     border: 4px solid #000000;
     margin-left: 20%;
 }
-#contenido a{
+
+#contenido a {
     color: #222120;
     text-decoration: none;
 }
-#contenido a:hover{
+
+#contenido a:hover {
     color: #007BFF;
     text-decoration: underline;
     transition: color 0.3s ease, text-decoration 0.3s ease;
 }
+
 a:visited {
     color: #222120;
 }
-.indice{
+
+.indice {
     padding: 5px;
     display: inline;
     border-radius: 3px;
     border: 2px solid #222120;
 }
-.indice:hover{
+
+.indice:hover {
     border: 2px solid #007BFF;
 }
-.boton{
+
+.boton {
     text-decoration: none;
 }
-.boton:hover{
+
+.boton:hover {
     color: #007BFF;
     transition: color 0.3s ease, text-decoration 0.3s ease;
 }
-#menu li {
-    list-style-type: none;
-    display: flex;
-    margin-left: 2%;
-    margin-right: 2%;
-    align-items: center;
-    justify-content: center;
-    font-family: "Open Sans", sans-serif;
-    color: #222120;
-}
-#menu li a{
-    text-decoration: none;
-    text-align: center;
-    transition: color 0.3s ease, text-decoration 0.3s ease;
-    font-family: "Open Sans", sans-serif;
-    color: #222120;
-}
-#menu li a:hover {
-    color: #007BFF !important;
-    text-decoration: underline !important;
-}
 
-#menu li a:active {
-    transform: scale(0.95) !important;
-}
 #cajaTitulo {
     padding-left: 2%;
     padding-right: 2%;
@@ -161,21 +159,25 @@ a:visited {
     border-bottom: 2px solid #7a6960;
     height: 70px;
 }
-#logoUniversidad{
+
+#logoUniversidad {
     width: 180px;
     height: auto;
 }
+
 #titulo {
     font-size: x-large;
     text-align: center;
 }
+
 #menu {
     display: flex;
     flex-direction: row;
-    justify-content:center;
+    justify-content: center;
     padding: 0;
     width: 180px;
 }
+
 #menu li {
     list-style-type: none;
     display: flex;
@@ -186,20 +188,24 @@ a:visited {
     font-family: "Open Sans", sans-serif;
     color: #222120;
 }
-#menu li a{
+
+#menu li a {
     text-decoration: none;
     text-align: center;
     transition: color 0.3s ease, text-decoration 0.3s ease;
     font-family: "Open Sans", sans-serif;
     color: #222120;
 }
-#menu li a:hover{
+
+#menu li a:hover {
     color: #007BFF;
     text-decoration: underline;
 }
-#menu li a:active{
+
+#menu li a:active {
     transform: scale(0.95);
 }
+
 @keyframes fadeIn {
     from {
         opacity: 0;

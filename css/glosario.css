@@ -1,10 +1,11 @@
-html{
+html {
     margin: 0;
     padding: 0;
     font-family: "Open Sans", sans-serif;
     color: #222120;
 }
-body{
+
+body {
     font-family: "Open Sans", sans-serif;
     color: #222120;
     opacity: 0;
@@ -20,21 +21,25 @@ body{
     height: 100%;
     overflow-y: scroll;
 }
-.imagenGlosario{
+
+.imagenGlosario {
     width: auto;
     height: 140px;
     border-radius: 15px;
     border: 2px solid black;
 }
-.cajaArticle{
+
+.cajaArticle {
     display: flex;
     justify-content: space-between;
 }
-.cajaArticle a{
+
+.cajaArticle a {
     margin-bottom: 2%;
     margin-right: 2.5%;
 }
-header{
+
+header {
     position: fixed;
     top: 0;
     left: 0;
@@ -42,6 +47,7 @@ header{
     z-index: 1000;
     background-color: #fff;
 }
+
 main {
     min-height: fit-content;
     max-height: fit-content;
@@ -55,32 +61,36 @@ main {
     box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.3);
     flex: 1;
 }
-main div{
+
+main div {
     padding: 0.5%;
 }
+
 details summary {
     cursor: pointer;
     padding: 10px;
     background-color: #f1f1f1;
     border: 1px solid #ccc;
-    border-radius: 4px;
-    border-radius: 0px 15px 0px 0px;
+    border-radius: 4px 4px 0 0;
 }
+
 details article {
     padding-left: 1%;
     background-color: #f1f1f1;
     border: 1px solid #ccc;
-    border-radius: 0px 0px 15px 15px;
+    border-radius: 0 0 15px 15px;
 }
-details article p{
+
+details article p {
     margin-top: 1%;
     padding-left: 1%;
     padding-right: 1%;
-    padding-top: 0%;
+    padding-top: 0;
     text-align: justify;
     font-size: x-large;
 }
-footer{
+
+footer {
     height: 30px;
     width: 100%;
     display: flex;
@@ -90,6 +100,7 @@ footer{
     background-color: #f8f8f8;
     box-sizing: border-box;
 }
+
 #cajaTitulo {
     padding-left: 2%;
     padding-right: 2%;
@@ -99,21 +110,25 @@ footer{
     border-bottom: 2px solid #7a6960;
     height: 70px;
 }
-#logoUniversidad{
+
+#logoUniversidad {
     width: 180px;
     height: auto;
 }
+
 #titulo {
     font-size: x-large;
     text-align: center;
 }
+
 #menu {
     display: flex;
     flex-direction: row;
-    justify-content:center;
+    justify-content: center;
     padding: 0;
     width: 180px;
 }
+
 #menu li {
     list-style-type: none;
     display: flex;
@@ -124,25 +139,30 @@ footer{
     font-family: "Open Sans", sans-serif;
     color: #222120;
 }
-#menu li a{
+
+#menu li a {
     text-decoration: none;
     text-align: center;
     transition: color 0.3s ease, text-decoration 0.3s ease;
     font-family: "Open Sans", sans-serif;
     color: #222120;
 }
-#menu li a:hover{
+
+#menu li a:hover {
     color: #007BFF;
     text-decoration: underline;
 }
-#menu li a:active{
+
+#menu li a:active {
     transform: scale(0.95);
 }
-@keyframes fadeIn{
-    from{
-      opacity: 0;
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
     }
-    to{
-      opacity: 1;
+
+    to {
+        opacity: 1;
     }
 }

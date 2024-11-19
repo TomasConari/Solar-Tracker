@@ -21,34 +21,6 @@ body {
     flex-direction: column;
     overflow-y: scroll;
 }
-#cajaTitulo {
-    padding-left: 2%;
-    padding-right: 2%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 2px solid #7a6960;
-    height: 70px;
-}
-#titulo {
-    font-size: x-large;
-    text-align: center;
-}
-#logoUniversidad {
-    width: 180px;
-    height: auto;
-}
-#titulo {
-    font-size: x-large;
-    text-align: center;
-}
-#menu {
-    display: flex;
-    flex-direction: row;
-    justify-content:center;
-    padding: 0;
-    width: 180px;
-}
 main{
     margin-left: 10dvh;
     margin-right: 10dvh;
@@ -179,6 +151,54 @@ a:visited {
 
 #menu li a:active {
     transform: scale(0.95) !important;
+}
+#cajaTitulo {
+    padding-left: 2%;
+    padding-right: 2%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #7a6960;
+    height: 70px;
+}
+#logoUniversidad{
+    width: 180px;
+    height: auto;
+}
+#titulo {
+    font-size: x-large;
+    text-align: center;
+}
+#menu {
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    padding: 0;
+    width: 180px;
+}
+#menu li {
+    list-style-type: none;
+    display: flex;
+    margin-left: 2%;
+    margin-right: 2%;
+    align-items: center;
+    justify-content: center;
+    font-family: "Open Sans", sans-serif;
+    color: #222120;
+}
+#menu li a{
+    text-decoration: none;
+    text-align: center;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+    font-family: "Open Sans", sans-serif;
+    color: #222120;
+}
+#menu li a:hover{
+    color: #007BFF;
+    text-decoration: underline;
+}
+#menu li a:active{
+    transform: scale(0.95);
 }
 @keyframes fadeIn {
     from {

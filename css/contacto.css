@@ -1,10 +1,11 @@
-html{
+html {
     margin: 0;
     padding: 0;
     font-family: "Open Sans", sans-serif;
     color: #222120;
 }
-body{
+
+body {
     font-family: "Open Sans", sans-serif;
     color: #222120;
     opacity: 0;
@@ -18,24 +19,26 @@ body{
     display: flex;
     flex-direction: column;
     height: 100%;
+    min-height: 100%;
     overflow-y: scroll;
 }
+
 main {
-    min-height: fit-content;
-    max-height: fit-content;
+    min-height: 100%;
     margin-top: 80px;
     display: flex;
     flex-direction: column;
     margin-bottom: 1%;
     border: 2px solid #7a6960;
     box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.3);
-    flex: 1;
+    flex-grow: 1;  /* Hace que main ocupe el espacio disponible */
     margin-left: 10dvh;
     margin-right: 10dvh;
     align-items: center;
     justify-content: center;
 }
-header{
+
+header {
     position: fixed;
     top: 0;
     left: 0;
@@ -43,7 +46,8 @@ header{
     z-index: 1000;
     background-color: #fff;
 }
-footer{
+
+footer {
     height: 30px;
     width: 100%;
     display: flex;
@@ -52,8 +56,10 @@ footer{
     border-top: 2px solid #7a6960;
     background-color: #f8f8f8;
     box-sizing: border-box;
+    margin-top: auto; /* Asegura que el footer se mantenga al final */
 }
-#caja{
+
+#caja {
     display: flex;
     flex-direction: column;
     height: 100%;
@@ -61,7 +67,8 @@ footer{
     align-content: center;
     padding-top: 5%;
 }
-input{
+
+input {
     padding: 8px;
     margin-top: 2%;
     font-size: 16px;
@@ -71,7 +78,8 @@ input{
     text-align: center;
     align-self: center;
 }
-#enviar{
+
+#enviar {
     width: fit-content;
     margin-bottom: 2%;
     padding: 8px;
@@ -81,15 +89,18 @@ input{
     align-self: center;
     margin-top: 4%;
 }
-#enviar:hover{
+
+#enviar:hover {
     cursor: pointer;
     background-color: #007bff;
-    color: white; 
+    color: white;
 }
+
 #enviar:active {
     background-color: #003d80;
     transform: scale(0.95);
 }
+
 #cajaTitulo {
     padding-left: 2%;
     padding-right: 2%;
@@ -99,21 +110,25 @@ input{
     border-bottom: 2px solid #7a6960;
     height: 70px;
 }
-#logoUniversidad{
+
+#logoUniversidad {
     width: 180px;
     height: auto;
 }
+
 #titulo {
     font-size: x-large;
     text-align: center;
 }
+
 #menu {
     display: flex;
     flex-direction: row;
-    justify-content:center;
+    justify-content: center;
     padding: 0;
     width: 180px;
 }
+
 #menu li {
     list-style-type: none;
     display: flex;
@@ -124,25 +139,30 @@ input{
     font-family: "Open Sans", sans-serif;
     color: #222120;
 }
-#menu li a{
+
+#menu li a {
     text-decoration: none;
     text-align: center;
     transition: color 0.3s ease, text-decoration 0.3s ease;
     font-family: "Open Sans", sans-serif;
     color: #222120;
 }
-#menu li a:hover{
+
+#menu li a:hover {
     color: #007BFF;
     text-decoration: underline;
 }
-#menu li a:active{
+
+#menu li a:active {
     transform: scale(0.95);
 }
-@keyframes fadeIn{
-    from{
-      opacity: 0;
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
     }
-    to{
-      opacity: 1;
+
+    to {
+        opacity: 1;
     }
 }

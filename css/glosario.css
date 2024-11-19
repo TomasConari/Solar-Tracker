@@ -51,7 +51,7 @@ header {
 }
 
 main {
-    flex-grow: 1;  /* Esto hace que main ocupe el espacio restante */
+    flex-grow: 1;
     min-height: fit-content;
     max-height: fit-content;
     margin-top: 80px;
@@ -101,6 +101,8 @@ footer {
     border-top: 2px solid #7a6960;
     background-color: #f8f8f8;
     box-sizing: border-box;
+    margin-top: auto;
+    flex-grow: 0;
 }
 
 #cajaTitulo {
